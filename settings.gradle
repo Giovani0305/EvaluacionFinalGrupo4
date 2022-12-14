@@ -1,0 +1,18 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        // Note: Here, We used for "com.github.ihsanbal:LoggingInterceptor"
+        maven { url 'https://jitpack.io' }
+    }
+}
+rootProject.name = "Assesment Demo"
+include ':app'
